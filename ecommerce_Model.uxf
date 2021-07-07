@@ -1,0 +1,180 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>290</x><y>457</y><w>210</w><h>250</h></coordinates><panel_attributes>&lt;&lt;OfferDay&gt;&gt;
+Package::ecommerce
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+-product: Products
+_-ClassAttribute: Products_
+-discount: Discount
+_-ClassAttribute: Discount_
+--
+#descoveryOffers(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>30</x><y>97</y><w>210</w><h>560</h></coordinates><panel_attributes>&lt;&lt;Product&gt;&gt;
+Package::ecommerce
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+-productTitle: String
+_-ClassAttribute: String_
+-price: String
+_-ClassAttribute: String_
+-availability: Long
+_-ClassAttribute: Long_
+-stock: Long
+_-ClassAttribute: Long_
+-photo: String
+_-ClassAttribute: Picture_
+-size: Long
+_-ClassAttribute: Long_
+-weight: Long
+_-ClassAttribute: Long_
+-flavor: String
+_-ClassAttribute: String_
+-brand: String
+_-ClassAttribute: String_
+-itemForm: String
+_-ClassAttribute: String_
+-ingredients: String
+_-ClassAttribute: String_
+-package: String
+_-ClassAttribute: String_
+-info: String
+_-ClassAttribute: String_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>555</x><y>657</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;CustomerReview&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-averageCustomerReviews: Long
+_-ClassAttribute: Long_
+-rating: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>220</y><w>210</w><h>200</h></coordinates><panel_attributes>&lt;&lt;Discount&gt;&gt;
+Package::ecommerce
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+-amount: Double
+_-ClassAttribute: Double_
+-active: Boolean
+_-ClassAttribute: Boolean_
+-expire: Date
+_-ClassAttribute: Date_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>275</x><y>40</y><w>210</w><h>390</h></coordinates><panel_attributes>&lt;&lt;User&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+-userName: String
+_-ClassAttribute:String_
+-password: String
+_-ClassAttribute:String_
+-email: String
+_-ClassAttribute:String_
+-address: String
+_-ClassAttribute:String_
+-contactNumber: String
+_-ClassAttribute:String_
+-loggedIn: Boolean
+_-ClassAttribute:Boolean_
+--
+#Login(i: int): int
+#LogOut(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>860</x><y>17</y><w>210</w><h>280</h></coordinates><panel_attributes>&lt;&lt;Cart&gt;&gt;
+Package::ecommerce
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+-discount: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+checkout()/
+/+addItem()/
+/+removeItem()/
+/+addDiscount()/
+/+expires()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>870</x><y>328</y><w>210</w><h>330</h></coordinates><panel_attributes>&lt;&lt;Order&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+-userName: String
+_-ClassAttribute: String_
+-ordered: Time
+_-ClassAttribute: Time_
+-shipped: Date
+_-ClassAttribute: Date_
+-shippingAddress: String
+_-ClassAttribute: String_
+-orderStatus: OrderStatus
+_-ClassAttribute: OrderStatus_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>570</x><y>0</y><w>160</w><h>140</h></coordinates><panel_attributes>template=0: enum
+OrderStatus
+--
+NEW
+PENDING
+ON_HOLD
+SHIPPED
+DELIVERED
+CLOSED</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>450</y><w>210</w><h>190</h></coordinates><panel_attributes>&lt;&lt;Inventory&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+-quantity: Long
+_-ClassAttribute: Long_
+-created: TimeStamp
+_-ClassAttribute: TimeStamp_
+-modified: TimeStamp
+_-ClassAttribute: TimeStamp_
+-deleted: TimeStamp
+_-ClassAttribute: TimeStamp_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element></diagram>
